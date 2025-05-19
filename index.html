@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navkar Gaushala, Dhule</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans text-gray-800">
+  <!-- Navigation -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <img src="/path-to-your-logo.png" alt="Navkar Gaushala Logo" class="h-10">
+      <nav class="space-x-4 text-sm font-medium">
+        <a href="#home" class="hover:text-green-600">Home</a>
+        <a href="#about" class="hover:text-green-600">About</a>
+        <a href="#work" class="hover:text-green-600">Our Work</a>
+        <a href="#visit" class="hover:text-green-600">Visit</a>
+        <a href="#donate" class="hover:text-green-600">Donate</a>
+        <a href="#contact" class="hover:text-green-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-green-50 py-16 text-center">
+    <h1 class="text-4xl font-bold text-green-700 mb-4">GauSeva - Protecting the Sacred</h1>
+    <p class="text-lg mb-6">Join us in serving and caring for rescued cows at Navkar Gaushala in Dhule.</p>
+    <div class="space-x-4">
+      <a href="#donate" class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">Donate Now</a>
+      <a href="#visit" class="bg-white border border-green-600 text-green-600 px-6 py-2 rounded hover:bg-green-100">Visit Us</a>
+    </div>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="py-16 bg-white text-center" id="mission">
+    <h2 class="text-3xl font-semibold mb-4">Our Mission</h2>
+    <p class="max-w-xl mx-auto text-lg mb-6">We care for over 300 cows with love and devotion. Our goal is to provide every cow with food, shelter, and peace.</p>
+    <a href="#donate" class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">Help Now</a>
+  </section>
+
+  <!-- Urgent Appeal -->
+  <section class="py-16 bg-red-50 text-center">
+    <h2 class="text-2xl font-bold text-red-700 mb-2">Urgent Appeal</h2>
+    <p class="text-lg mb-4">Feed a Cow Today<br><strong>Just ₹50 can feed one cow for a day.</strong></p>
+    <a href="#donate" class="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700">Donate Now</a>
+  </section>
+
+  <!-- Impact Section -->
+  <section class="py-16 bg-gray-100 text-center">
+    <h2 class="text-3xl font-semibold mb-6">Our Impact</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+      <div>
+        <p class="text-2xl font-bold">300+</p>
+        <p>Cows cared for</p>
+      </div>
+      <div>
+        <p class="text-2xl font-bold">6 acres</p>
+        <p>Shelter land</p>
+      </div>
+      <div>
+        <p class="text-2xl font-bold">12,000+ kg</p>
+        <p>Monthly fodder</p>
+      </div>
+      <div>
+        <p class="text-2xl font-bold">Sustainable</p>
+        <p>Practices in use</p>
+      </div>
+    </div>
+    <div class="mt-6">
+      <a href="#donate" class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">Make A Difference</a>
+    </div>
+  </section>
+
+  <!-- Visual Highlight -->
+    <section id="gallery" class="py-16 bg-white text-center">
+    <h2 class="text-3xl font-semibold mb-6">Glimse of Gaushala</h2>
+    <div class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-lg shadow-lg">
+      <div id="carouselImages" class="flex transition-transform duration-500 ease-in-out">
+        <img src="image1.jpeg" class="w-full flex-shrink-0" alt="Gallery Image 1" />
+        <img src="image2.jpeg" class="w-full flex-shrink-0" alt="Gallery Image 2" />
+        <img src="image3.jpeg" class="w-full flex-shrink-0" alt="Gallery Image 3" />
+        <img src="image4.jpeg" class="w-full flex-shrink-0" alt="Gallery Image 4" />
+                <img src="image5.jpeg" class="w-full flex-shrink-0" alt="Gallery Image 4" />
+        <img src="image6.jpeg" class="w-full flex-shrink-0" alt="Gallery Image 4" />
+
+      </div>
+      <button onclick="moveSlide(-1)"
+        class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-white bg-opacity-70 hover:bg-opacity-100 px-4 py-2 text-xl font-bold text-gray-700 rounded-r">
+        ‹
+      </button>
+      <button onclick="moveSlide(1)"
+        class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-white bg-opacity-70 hover:bg-opacity-100 px-4 py-2 text-xl font-bold text-gray-700 rounded-l">
+        ›
+      </button>
+    </div>
+    <p class="text-gray-500 mt-4 text-sm">(Swipe or click arrows to view more photos)</p>
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="py-16 bg-green-50 text-center">
+    <h2 class="text-3xl font-semibold mb-4">About Us</h2>
+    <p class="max-w-3xl mx-auto text-lg">Navkar Gaushala began in Dhule with a small group of devotees who believed in Ahimsa and Jeevdaya. Over five years, it has grown into a safe home for hundreds of injured and abandoned cows thanks to our caretakers, trustees, and supporters.</p>
+    <p class="mt-4 text-sm">(Trustee names will be listed here)</p>
+  </section>
+
+  <!-- Our Work -->
+  <section id="work" class="py-16 bg-white text-center">
+    <h2 class="text-3xl font-semibold mb-8">Our Work</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+      <div>
+        <h3 class="text-xl font-bold mb-2">Cow Rescue & Care</h3>
+        <p>We rescue cows from accidents, abandonment, and cruelty. Each cow is fed, treated, and given a clean place to rest.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold mb-2">Feeding & Shelter</h3>
+        <p>Our cows eat fresh fodder, drink clean water, and stay in large, shaded shelters with regular vet visits.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold mb-2">Sustainability</h3>
+        <p>We protect nature by composting, reusing cow dung, and conserving water whenever possible.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visit Section -->
+  <section id="visit" class="py-16 bg-gray-50 text-center">
+    <h2 class="text-3xl font-semibold mb-4">Visit the Gaushala</h2>
+    <p class="max-w-xl mx-auto mb-4">We welcome all visitors to experience the joy of GauSeva.</p>
+    <p>Address: Opp. Dadawadi, 115/3 Mohadi, Chalisgaon Road, Dhule, Maharashtra 424001</p>
+    <p>Timings: 9 AM – 5 PM</p>
+    <a class="text-green-600 underline mt-2 inline-block" href="https://maps.app.goo.gl/b8mEbgnMA4sQe9dc9" target="_blank">Open in Google Maps</a>
+  </section>
+
+  <!-- Gallery with Carousel -->
+
+
+  <!-- Donate Section -->
+  <section id="donate" class="py-16 bg-green-100 text-center">
+    <h2 class="text-3xl font-semibold mb-4">Donate / Sponsor a Cow</h2>
+    <p class="max-w-2xl mx-auto text-lg mb-6">Your donation feeds, protects, and heals our cows. Every rupee helps.</p>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+      <div>₹50<br><span class="text-sm">Feed for a day</span></div>
+      <div>₹1,500<br><span class="text-sm">Feed for a month</span></div>
+      <div>₹18,000<br><span class="text-sm">Sponsor a year</span></div>
+      <div>Any amount<br><span class="text-sm">General support</span></div>
+    </div>
+    <div class="mt-6">
+      <p class="mb-2">1. Scan the QR Code</p>
+      <img src="QRScanner.jpg" alt="QR Code" class="mx-auto w-80 h-80">
+      <p class="mt-4 text-sm ">Phone no. for Donations: 9423193820</p>
+      <p class="mt-2">2. Enter your amount<br>3. Note: "GauSeva"<br>4. Share screenshot on WhatsApp<br>5. Get receipt</p>
+      <p class="mt-4 text-sm italic">All donations eligible for 80G tax benefits.</p>
+      <p class="text-xs">Trust Reg No: E-489(Dhule) dt.30-03-2001 | PAN: AABTN3273B | 80G: Applied For</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-white text-center">
+    <h2 class="text-3xl font-semibold mb-4">Contact Us</h2>
+    <p>Phone: 02562-232093<br>Email: ngpd2001@gmail.com<br>WhatsApp: 9823172765</p>
+    <div class="mt-2">
+      <a href="https://www.instagram.com/navkargaushala" class="text-blue-600 underline" target="_blank">Instagram</a> |
+      <a href="https://www.facebook.com/navkargaushala" class="text-blue-600 underline" target="_blank">Facebook</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-200 py-6 text-center text-sm">
+    <div class="mb-2">
+      <a href="#about" class="mx-2">About</a>
+      <a href="#donate" class="mx-2">Donate</a>
+      <a href="#visit" class="mx-2">Visit</a>
+      <a href="#contact" class="mx-2">Contact</a>
+    </div>
+    <p>© Navkar Gaushala, Dhule</p>
+    <div class="mt-2">
+      <a href="#" class="mx-1 underline text-gray-600">Privacy Policy</a> |
+      <a href="#" class="mx-1 underline text-gray-600">Terms</a>
+    </div>
+  </footer>
+
+  <!-- Carousel Script -->
+  <script>
+    let currentSlide = 0;
+
+    function moveSlide(direction) {
+      const carousel = document.getElementById("carouselImages");
+      const slides = carousel.querySelectorAll("img");
+      const totalSlides = slides.length;
+
+      currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+      const offset = -currentSlide * 100;
+      carousel.style.transform = `translateX(${offset}%)`;
+    }
+  </script>
+</body>
+
+</html>
