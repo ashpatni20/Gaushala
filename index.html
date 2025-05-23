@@ -10,19 +10,40 @@
 
 <body class="font-sans text-gray-800">
   <!-- Navigation -->
-  <header class="bg-white shadow sticky top-0 z-50">
-    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-      <img src="/path-to-your-logo.png" alt="Navkar Gaushala Logo" class="h-10">
-      <nav class="space-x-4 text-sm font-medium">
-        <a href="#home" class="hover:text-green-600">Home</a>
-        <a href="#about" class="hover:text-green-600">About</a>
-        <a href="#work" class="hover:text-green-600">Our Work</a>
-        <a href="#visit" class="hover:text-green-600">Visit</a>
-        <a href="#donate" class="hover:text-green-600">Donate</a>
-        <a href="#contact" class="hover:text-green-600">Contact</a>
-      </nav>
+ <header class="bg-white shadow-md sticky top-0 z-50">
+  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+    <div class="flex items-center space-x-3">
+      <img src="logo.jpeg" alt="Navkar Gaushala Logo" class="h-16 w-auto object-contain">
+      <span class="text-xl font-semibold text-green-700 hidden sm:inline">Navkar Gaushala</span>
     </div>
-  </header>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex space-x-6 text-base font-medium text-gray-700">
+      <a href="#home" class="hover:text-green-600">Home</a>
+      <a href="#about" class="hover:text-green-600">About</a>
+      <a href="#work" class="hover:text-green-600">Our Work</a>
+      <a href="#visit" class="hover:text-green-600">Visit</a>
+      <a href="#donate" class="hover:text-green-600">Donate</a>
+      <a href="#contact" class="hover:text-green-600">Contact</a>
+    </nav>
+
+    <!-- Mobile Menu Toggle -->
+    <button id="menuToggle" class="md:hidden text-3xl text-green-700 focus:outline-none">☰</button>
+  </div>
+
+  <!-- Mobile Nav Menu -->
+  <div id="mobileMenu" class="md:hidden hidden bg-white border-t border-gray-200">
+    <nav class="flex flex-col p-4 space-y-3 text-base font-medium text-gray-700">
+      <a href="#home" class="hover:text-green-600">Home</a>
+      <a href="#about" class="hover:text-green-600">About</a>
+      <a href="#work" class="hover:text-green-600">Our Work</a>
+      <a href="#visit" class="hover:text-green-600">Visit</a>
+      <a href="#donate" class="hover:text-green-600">Donate</a>
+      <a href="#contact" class="hover:text-green-600">Contact</a>
+    </nav>
+  </div>
+</header>
+
 
   <!-- Hero Section -->
   <section id="home" class="bg-green-50 py-16 text-center">
@@ -195,6 +216,14 @@
       const offset = -currentSlide * 100;
       carousel.style.transform = `translateX(${offset}%)`;
     }
+
+  const toggleBtn = document.getElementById("menuToggle");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  toggleBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+
   </script>
 </body>
 
