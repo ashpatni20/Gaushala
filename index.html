@@ -10,53 +10,56 @@
 
 <body class="font-sans text-gray-800">
   <!-- Navigation -->
- <header class="bg-white shadow-md sticky top-0 z-50">
-  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-    <div class="flex items-center space-x-3">
-      <img src="logo.jpeg" alt="Navkar Gaushala Logo" class="h-16 w-auto object-contain">
-      <span class="text-xl font-semibold text-green-700 hidden sm:inline">Navkar Gaushala</span>
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <img src="logo.jpeg" alt="Navkar Gaushala Logo" class="h-12 w-auto object-contain">
+        <span class="text-xl font-bold text-green-700 hidden sm:inline">Navkar Gaushala</span>
+      </div>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex space-x-6 text-sm font-medium text-gray-700">
+        <a href="#home" class="hover:text-green-600 transition-colors duration-200">Home</a>
+        <a href="#about" class="hover:text-green-600 transition-colors duration-200">About</a>
+        <a href="#work" class="hover:text-green-600 transition-colors duration-200">Our Work</a>
+        <a href="#visit" class="hover:text-green-600 transition-colors duration-200">Visit</a>
+        <a href="#donate" class="hover:text-green-600 transition-colors duration-200">Donate</a>
+        <a href="#contact" class="hover:text-green-600 transition-colors duration-200">Contact</a>
+      </nav>
+
+      <!-- Mobile Menu Toggle -->
+      <button id="menuToggle" class="md:hidden text-2xl text-green-700 focus:outline-none">☰</button>
     </div>
 
-    <!-- Desktop Nav -->
-    <nav class="hidden md:flex space-x-6 text-base font-medium text-gray-700">
-      <a href="#home" class="hover:text-green-600">Home</a>
-      <a href="#about" class="hover:text-green-600">About</a>
-      <a href="#work" class="hover:text-green-600">Our Work</a>
-      <a href="#visit" class="hover:text-green-600">Visit</a>
-      <a href="#donate" class="hover:text-green-600">Donate</a>
-      <a href="#contact" class="hover:text-green-600">Contact</a>
-    </nav>
-
-    <!-- Mobile Menu Toggle -->
-    <button id="menuToggle" class="md:hidden text-3xl text-green-700 focus:outline-none">☰</button>
-  </div>
-
-  <!-- Mobile Nav Menu -->
-  <div id="mobileMenu" class="md:hidden hidden bg-white border-t border-gray-200">
-    <nav class="flex flex-col p-4 space-y-3 text-base font-medium text-gray-700">
-      <a href="#home" class="hover:text-green-600">Home</a>
-      <a href="#about" class="hover:text-green-600">About</a>
-      <a href="#work" class="hover:text-green-600">Our Work</a>
-      <a href="#visit" class="hover:text-green-600">Visit</a>
-      <a href="#donate" class="hover:text-green-600">Donate</a>
-      <a href="#contact" class="hover:text-green-600">Contact</a>
-    </nav>
-  </div>
-</header>
-
+    <!-- Mobile Nav Menu -->
+    <div id="mobileMenu" class="md:hidden hidden bg-white border-t border-gray-200">
+      <nav class="flex flex-col p-4 space-y-3 text-sm font-medium text-gray-700">
+        <a href="#home" class="hover:text-green-600 transition-colors duration-200">Home</a>
+        <a href="#about" class="hover:text-green-600 transition-colors duration-200">About</a>
+        <a href="#work" class="hover:text-green-600 transition-colors duration-200">Our Work</a>
+        <a href="#visit" class="hover:text-green-600 transition-colors duration-200">Visit</a>
+        <a href="#donate" class="hover:text-green-600 transition-colors duration-200">Donate</a>
+        <a href="#contact" class="hover:text-green-600 transition-colors duration-200">Contact</a>
+      </nav>
+    </div>
+  </header>
 
   <!-- Hero Section -->
-  <section id="home" class="bg-green-50 py-16 text-center">
-    <h1 class="text-4xl font-bold text-green-700 mb-4">GauSeva - Protecting the Sacred</h1>
-    <p class="text-lg mb-6">Join us in serving and caring for rescued cows at Navkar Gaushala in Dhule.</p>
-    <div class="space-x-4">
-      <a href="#donate" class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">Donate Now</a>
-      <a href="#visit" class="bg-white border border-green-600 text-green-600 px-6 py-2 rounded hover:bg-green-100">Visit Us</a>
+  <section id="home" class="relative w-full h-[90vh] flex items-center justify-center overflow-hidden bg-cover bg-center" style="background-image: url('cow_image.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+    <div class="relative z-10 text-center px-6">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4">GauSeva - Protecting the Sacred</h1>
+      <p class="text-lg md:text-xl text-white mb-6">Join us in serving and caring for rescued cows at Navkar Gaushala in Dhule.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="#donate" class="bg-green-600 text-white px-6 py-3 rounded-md hover:bg-green-700 transition-colors duration-200">Donate Now</a>
+        <a href="#visit" class="bg-white border border-green-600 text-green-600 px-6 py-3 rounded-md hover:bg-green-100 transition-colors duration-200">Visit Us</a>
+      </div>
     </div>
   </section>
 
+
   <!-- Mission Section -->
-  <section class="py-16 bg-white text-center" id="mission">
+  <section class="py-16 bg-gray-50 text-center" id="mission">
     <h2 class="text-3xl font-semibold mb-4">Our Mission</h2>
     <p class="max-w-xl mx-auto text-lg mb-6">We care for over 300 cows with love and devotion. Our goal is to provide every cow with food, shelter, and peace.</p>
     <a href="#donate" class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">Help Now</a>
@@ -70,7 +73,7 @@
   </section>
 
   <!-- Impact Section -->
-  <section class="py-16 bg-gray-100 text-center">
+  <section class="py-16 bg-gray-50 text-center">
     <h2 class="text-3xl font-semibold mb-6">Our Impact</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
       <div>
@@ -96,7 +99,7 @@
   </section>
 
   <!-- Visual Highlight -->
-    <section id="gallery" class="py-16 bg-white text-center">
+    <section id="gallery" class="py-16 bg-gray-50 text-center">
     <h2 class="text-3xl font-semibold mb-6">Glimpses of Gaushala</h2>
     <div class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-lg shadow-lg">
       <div id="carouselImages" class="flex transition-transform duration-500 ease-in-out">
@@ -121,14 +124,14 @@
   </section>
 
   <!-- About Us -->
-  <section id="about" class="py-16 bg-green-50 text-center">
+  <section id="about" class="py-16 bg-gray-50 text-center">
     <h2 class="text-3xl font-semibold mb-4">About Us</h2>
     <p class="max-w-3xl mx-auto text-lg">Navkar Gaushala began in Dhule with a small group of devotees who believed in Ahimsa and Jeevdaya. Over five years, it has grown into a safe home for hundreds of injured and abandoned cows thanks to our caretakers, trustees, and supporters.</p>
     <p class="mt-4 text-sm">(Trustee names will be listed here)</p>
   </section>
 
   <!-- Our Work -->
-  <section id="work" class="py-16 bg-white text-center">
+  <section id="work" class="py-16 bg-gray-50 text-center">
     <h2 class="text-3xl font-semibold mb-8">Our Work</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
       <div>
@@ -179,7 +182,7 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="py-16 bg-white text-center">
+  <section id="contact" class="py-16 bg-gray-50 text-center">
     <h2 class="text-3xl font-semibold mb-4">Contact Us</h2>
     <p>Phone: 02562-232093<br>Email: ngpd2001@gmail.com<br>WhatsApp: 9823172765</p>
     <div class="mt-2">
@@ -189,7 +192,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-200 py-6 text-center text-sm">
+  <footer class="bg-gray-100 py-6 text-center text-sm">
     <div class="mb-2">
       <a href="#about" class="mx-2">About</a>
       <a href="#donate" class="mx-2">Donate</a>
